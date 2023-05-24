@@ -1,0 +1,47 @@
+name: runn
+run_id: commands[0]
+env HOME: /home/kompot
+env LANG: en_US.UTF-8
+env LANGUAGE: 
+env TERM: xterm-256color
+env PATH: /home/kompot/bhousing-wepapp/.tox/test_app/bin:/home/kompot/bhousing-wepapp/venv/bin:/home/kompot/anaconda3/condabin:/home/kompot/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/home/kompot/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+env PYTHONHASHSEED: 192960897
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env PYTHONPATH: .
+env TOX_ENV_NAME: runn
+env TOX_WORK_DIR: /home/kompot/bhousing-wepapp/.tox
+env TOX_ENV_DIR: /home/kompot/bhousing-wepapp/.tox/test_app
+env VIRTUAL_ENV: /home/kompot/bhousing-wepapp/.tox/test_app
+env COLUMNS: 106
+env LINES: 30
+metadata pid: 285470
+cwd: /home/kompot/bhousing-wepapp
+allow: /home/kompot/bhousing-wepapp/.tox/test_app/bin/*
+cmd: python app/main.py
+exit_code: -15
+[32mINFO[0m:     127.0.0.1:39018 - "[1mGET / HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:39018 - "[1mGET /docs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:39018 - "[1mGET /api/v1/openapi.json HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:39018 - "[1mGET /api/v1/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42374 - "[1mPOST /api/v1/predict HTTP/1.1[0m" [32m200 OK[0m
+
+standard error:
+[32m2023-05-24 20:27:20.151[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36m<module>[0m:[36m55[0m - [33m[1mRunning in development mode. Do not run like this in production.[0m
+[32mINFO[0m:     Started server process [[36m285470[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Uvicorn running on [1mhttp://localhost:8001[0m (Press CTRL+C to quit)
+[32m2023-05-24 20:27:33.177[0m | [1mINFO    [0m | [36mapp.api[0m:[36mpredict[0m:[36m39[0m - [1mMaking prediction on inputs: [BHousingInputSchema(ID=7, CRIM=0.08829, ZN=12.5, INDUS=7.87, CHAS=0.0, NOX=0.524, RM=6.012, AGE=66.6, DIS=5.5605, RAD=5.0, TAX=311.0, PTRATIO=15.2, B=395.6, LSTAT=12.43)][0m
+[32m2023-05-24 20:27:33.184[0m | [1mINFO    [0m | [36mapp.api[0m:[36mpredict[0m:[36m47[0m - [1mPrediction price: [21.394266097080653][0m
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Finished server process [[36m285470[0m]
+[31mERROR[0m:    Traceback (most recent call last):
+  File "/home/kompot/bhousing-wepapp/.tox/test_app/lib/python3.10/site-packages/starlette/routing.py", line 686, in lifespan
+    await receive()
+  File "/home/kompot/bhousing-wepapp/.tox/test_app/lib/python3.10/site-packages/uvicorn/lifespan/on.py", line 139, in receive
+    return await self.receive_queue.get()
+  File "/usr/lib/python3.10/asyncio/queues.py", line 159, in get
+    await getter
+asyncio.exceptions.CancelledError
+

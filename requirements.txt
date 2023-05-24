@@ -1,0 +1,8 @@
+fastapi>=0.64.0,<1.0.0
+loguru==0.7.0
+pydantic>=1.2.0,<2.0.0
+python-multipart==0.0.6
+bhousing-model==0.0.6
+typing_extensions==4.6.1
+uvicorn==0.22.0
+httpx>=0.13.0,<1.0.0

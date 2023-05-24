@@ -1,0 +1,25 @@
+name: lint
+run_id: commands[1]
+env HOME: /home/kompot
+env LANG: en_US.UTF-8
+env LANGUAGE: 
+env TERM: xterm-256color
+env PATH: /home/kompot/bhousing-wepapp/.tox/test_app/bin:/home/kompot/bhousing-wepapp/venv/bin:/home/kompot/anaconda3/condabin:/home/kompot/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/home/kompot/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+env PYTHONHASHSEED: 1770145748
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env TOX_ENV_NAME: lint
+env TOX_WORK_DIR: /home/kompot/bhousing-wepapp/.tox
+env TOX_ENV_DIR: /home/kompot/bhousing-wepapp/.tox/test_app
+env VIRTUAL_ENV: /home/kompot/bhousing-wepapp/.tox/test_app
+env COLUMNS: 106
+env LINES: 30
+metadata pid: 179008
+cwd: /home/kompot/bhousing-wepapp
+allow: /home/kompot/bhousing-wepapp/.tox/test_app/bin/*
+cmd: black app
+exit_code: 0
+
+standard error:
+[1mAll done! ✨ 🍰 ✨[0m
+[34m7 files [0mleft unchanged.

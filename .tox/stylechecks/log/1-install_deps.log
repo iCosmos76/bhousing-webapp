@@ -1,0 +1,121 @@
+name: stylechecks
+run_id: install_deps
+env HOME: /home/kompot
+env LANG: en_US.UTF-8
+env LANGUAGE: 
+env TERM: xterm-256color
+env PATH: /home/kompot/bhousing-wepapp/.tox/test_app/bin:/home/kompot/bhousing-wepapp/venv/bin:/home/kompot/anaconda3/condabin:/home/kompot/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/home/kompot/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+env PYTHONHASHSEED: 1770145748
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env TOX_ENV_NAME: stylechecks
+env TOX_WORK_DIR: /home/kompot/bhousing-wepapp/.tox
+env TOX_ENV_DIR: /home/kompot/bhousing-wepapp/.tox/test_app
+env VIRTUAL_ENV: /home/kompot/bhousing-wepapp/.tox/test_app
+env COLUMNS: 106
+env LINES: 30
+metadata pid: 178557
+cwd: /home/kompot/bhousing-wepapp
+allow: /home/kompot/bhousing-wepapp/.tox/test_app/bin/*
+cmd: pip install -r test_requirements.txt
+exit_code: 0
+Collecting fastapi<1.0.0,>=0.64.0 (from -r requirements.txt (line 1))
+  Using cached fastapi-0.95.2-py3-none-any.whl (56 kB)
+Collecting loguru==0.7.0 (from -r requirements.txt (line 2))
+  Using cached loguru-0.7.0-py3-none-any.whl (59 kB)
+Collecting pydantic<2.0.0,>=1.2.0 (from -r requirements.txt (line 3))
+  Using cached pydantic-1.10.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.1 MB)
+Collecting python-multipart==0.0.6 (from -r requirements.txt (line 4))
+  Using cached python_multipart-0.0.6-py3-none-any.whl (45 kB)
+Collecting bhousing-model==0.0.5 (from -r requirements.txt (line 5))
+  Using cached bhousing_model-0.0.5-py3-none-any.whl (431 kB)
+Collecting typing_extensions==4.6.1 (from -r requirements.txt (line 6))
+  Using cached typing_extensions-4.6.1-py3-none-any.whl (31 kB)
+Collecting uvicorn==0.22.0 (from -r requirements.txt (line 7))
+  Using cached uvicorn-0.22.0-py3-none-any.whl (58 kB)
+Collecting httpx<1.0.0,>=0.13.0 (from -r requirements.txt (line 8))
+  Using cached httpx-0.24.1-py3-none-any.whl (75 kB)
+Collecting black==23.3.0 (from -r test_requirements.txt (line 4))
+  Using cached black-23.3.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.7 MB)
+Collecting flake8==6.0.0 (from -r test_requirements.txt (line 5))
+  Using cached flake8-6.0.0-py2.py3-none-any.whl (57 kB)
+Collecting isort==5.12.0 (from -r test_requirements.txt (line 6))
+  Using cached isort-5.12.0-py3-none-any.whl (91 kB)
+Collecting mypy==1.3.0 (from -r test_requirements.txt (line 7))
+  Using cached mypy-1.3.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+Collecting numpy==1.24.3 (from -r test_requirements.txt (line 8))
+  Using cached numpy-1.24.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+Collecting pytest==7.3.1 (from -r test_requirements.txt (line 11))
+  Using cached pytest-7.3.1-py3-none-any.whl (320 kB)
+Collecting feature-engine==1.6.0 (from bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached feature_engine-1.6.0-py2.py3-none-any.whl (319 kB)
+Collecting joblib==1.2.0 (from bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached joblib-1.2.0-py3-none-any.whl (297 kB)
+Collecting pandas==2.0.1 (from bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached pandas-2.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.3 MB)
+Collecting pydantic<2.0.0,>=1.2.0 (from -r requirements.txt (line 3))
+  Using cached pydantic-1.10.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.1 MB)
+Collecting ruamel.yaml==0.17.26 (from bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached ruamel.yaml-0.17.26-py3-none-any.whl (109 kB)
+Collecting scikit-learn==1.2.2 (from bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached scikit_learn-1.2.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (9.6 MB)
+Collecting strictyaml==1.7.3 (from bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached strictyaml-1.7.3-py3-none-any.whl (123 kB)
+Collecting click>=7.0 (from uvicorn==0.22.0->-r requirements.txt (line 7))
+  Using cached click-8.1.3-py3-none-any.whl (96 kB)
+Collecting h11>=0.8 (from uvicorn==0.22.0->-r requirements.txt (line 7))
+  Using cached h11-0.14.0-py3-none-any.whl (58 kB)
+Collecting mypy-extensions>=0.4.3 (from black==23.3.0->-r test_requirements.txt (line 4))
+  Using cached mypy_extensions-1.0.0-py3-none-any.whl (4.7 kB)
+Collecting packaging>=22.0 (from black==23.3.0->-r test_requirements.txt (line 4))
+  Using cached packaging-23.1-py3-none-any.whl (48 kB)
+Collecting pathspec>=0.9.0 (from black==23.3.0->-r test_requirements.txt (line 4))
+  Using cached pathspec-0.11.1-py3-none-any.whl (29 kB)
+Collecting platformdirs>=2 (from black==23.3.0->-r test_requirements.txt (line 4))
+  Using cached platformdirs-3.5.1-py3-none-any.whl (15 kB)
+Collecting tomli>=1.1.0 (from black==23.3.0->-r test_requirements.txt (line 4))
+  Using cached tomli-2.0.1-py3-none-any.whl (12 kB)
+Collecting mccabe<0.8.0,>=0.7.0 (from flake8==6.0.0->-r test_requirements.txt (line 5))
+  Using cached mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Collecting pycodestyle<2.11.0,>=2.10.0 (from flake8==6.0.0->-r test_requirements.txt (line 5))
+  Using cached pycodestyle-2.10.0-py2.py3-none-any.whl (41 kB)
+Collecting pyflakes<3.1.0,>=3.0.0 (from flake8==6.0.0->-r test_requirements.txt (line 5))
+  Using cached pyflakes-3.0.1-py2.py3-none-any.whl (62 kB)
+Collecting iniconfig (from pytest==7.3.1->-r test_requirements.txt (line 11))
+  Using cached iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Collecting pluggy<2.0,>=0.12 (from pytest==7.3.1->-r test_requirements.txt (line 11))
+  Using cached pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+Collecting exceptiongroup>=1.0.0rc8 (from pytest==7.3.1->-r test_requirements.txt (line 11))
+  Using cached exceptiongroup-1.1.1-py3-none-any.whl (14 kB)
+Collecting scipy>=1.4.1 (from feature-engine==1.6.0->bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached scipy-1.10.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.4 MB)
+Collecting statsmodels>=0.11.1 (from feature-engine==1.6.0->bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached statsmodels-0.14.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.1 MB)
+Collecting python-dateutil>=2.8.2 (from pandas==2.0.1->bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting pytz>=2020.1 (from pandas==2.0.1->bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached pytz-2023.3-py2.py3-none-any.whl (502 kB)
+Collecting tzdata>=2022.1 (from pandas==2.0.1->bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+Collecting ruamel.yaml.clib>=0.2.7 (from ruamel.yaml==0.17.26->bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached ruamel.yaml.clib-0.2.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (485 kB)
+Collecting threadpoolctl>=2.0.0 (from scikit-learn==1.2.2->bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached threadpoolctl-3.1.0-py3-none-any.whl (14 kB)
+Collecting starlette<0.28.0,>=0.27.0 (from fastapi<1.0.0,>=0.64.0->-r requirements.txt (line 1))
+  Using cached starlette-0.27.0-py3-none-any.whl (66 kB)
+Collecting certifi (from httpx<1.0.0,>=0.13.0->-r requirements.txt (line 8))
+  Using cached certifi-2023.5.7-py3-none-any.whl (156 kB)
+Collecting httpcore<0.18.0,>=0.15.0 (from httpx<1.0.0,>=0.13.0->-r requirements.txt (line 8))
+  Using cached httpcore-0.17.2-py3-none-any.whl (72 kB)
+Collecting idna (from httpx<1.0.0,>=0.13.0->-r requirements.txt (line 8))
+  Using cached idna-3.4-py3-none-any.whl (61 kB)
+Collecting sniffio (from httpx<1.0.0,>=0.13.0->-r requirements.txt (line 8))
+  Using cached sniffio-1.3.0-py3-none-any.whl (10 kB)
+Collecting anyio<5.0,>=3.0 (from httpcore<0.18.0,>=0.15.0->httpx<1.0.0,>=0.13.0->-r requirements.txt (line 8))
+  Using cached anyio-3.6.2-py3-none-any.whl (80 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.0.1->bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting patsy>=0.5.2 (from statsmodels>=0.11.1->feature-engine==1.6.0->bhousing-model==0.0.5->-r requirements.txt (line 5))
+  Using cached patsy-0.5.3-py2.py3-none-any.whl (233 kB)
+Installing collected packages: pytz, tzdata, typing_extensions, tomli, threadpoolctl, sniffio, six, ruamel.yaml.clib, python-multipart, pyflakes, pycodestyle, pluggy, platformdirs, pathspec, packaging, numpy, mypy-extensions, mccabe, loguru, joblib, isort, iniconfig, idna, h11, exceptiongroup, click, certifi, uvicorn, scipy, ruamel.yaml, python-dateutil, pytest, pydantic, patsy, mypy, flake8, black, anyio, strictyaml, starlette, scikit-learn, pandas, httpcore, statsmodels, httpx, fastapi, feature-engine, bhousing-model
+Successfully installed anyio-3.6.2 bhousing-model-0.0.5 black-23.3.0 certifi-2023.5.7 click-8.1.3 exceptiongroup-1.1.1 fastapi-0.95.2 feature-engine-1.6.0 flake8-6.0.0 h11-0.14.0 httpcore-0.17.2 httpx-0.24.1 idna-3.4 iniconfig-2.0.0 isort-5.12.0 joblib-1.2.0 loguru-0.7.0 mccabe-0.7.0 mypy-1.3.0 mypy-extensions-1.0.0 numpy-1.24.3 packaging-23.1 pandas-2.0.1 pathspec-0.11.1 patsy-0.5.3 platformdirs-3.5.1 pluggy-1.0.0 pycodestyle-2.10.0 pydantic-1.10.7 pyflakes-3.0.1 pytest-7.3.1 python-dateutil-2.8.2 python-multipart-0.0.6 pytz-2023.3 ruamel.yaml-0.17.26 ruamel.yaml.clib-0.2.7 scikit-learn-1.2.2 scipy-1.10.1 six-1.16.0 sniffio-1.3.0 starlette-0.27.0 statsmodels-0.14.0 strictyaml-1.7.3 threadpoolctl-3.1.0 tomli-2.0.1 typing_extensions-4.6.1 tzdata-2023.3 uvicorn-0.22.0
